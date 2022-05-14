@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+/*upper-part */
+
+.carousel {
+    width: 1536px;
+    height: 627px;
+    overflow: hidden;
+}
+
+.carousel-ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transition: transform 1s ease-out;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .big-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 42%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.888);
+    transform: translateY(-42%);
+    padding: 18px;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    opacity: 0.6;
+}
+
+.next {
+    right: 0;
+}
+
+
+/*bottom part */
+
+.bottom-part {
+    background-color: black;
+    display: flex;
+    padding: 10px 0;
+}
+
+.bottom-part .selected {
+    object-fit: cover;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 384px;
+    height: 98px;
+}
+
+.selected:hover {
+    opacity: 0.6;
+}
+
+
+/*
+
+width: 375px;
+height: 98px;*/
